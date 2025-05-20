@@ -1,5 +1,5 @@
 document.getElementById("mostrar").addEventListener("click", () => {
-  const nome = document.getElementById("nome").value.trim();
+  const nome = document.getElementById("username").value.trim();
 
   const resultado = document.getElementById("resultado");
   if (nome) {
