@@ -17,7 +17,7 @@
     <main class="container">
       <h1>Projeto JS com Pico.css</h1>
 
-      <div class="register">
+      <div id="registerForm">
         <form>
           <label for="nome">Username:</label>
           <input
@@ -38,9 +38,29 @@
             placeholder="Write your Strong Password"
           />
         </form>
-
-        <button id="mostrar">Mostrar Nome</button>
       </div>
+
+      <div id="loginForm" class="hidden">
+        <form>
+          <label for="nome">Username:</label>
+          <input
+            type="text"
+            id="username"
+            placeholder="Write your Beautiful Username"
+          />
+          <label for="nome">Password:</label>
+          <input
+            type="password"
+            id="password"
+            placeholder="Write your Strong Password"
+          />
+        </form>
+      </div>
+
+      <button id="mostrar">Mostrar Nome</button>
+
+      <button onclick="showLogin()">Login</button>
+      <button onclick="showRegister()">Register</button>
 
       <p id="resultado" class="contrast mt-2"></p>
     </main>
